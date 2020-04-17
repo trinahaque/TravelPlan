@@ -17,10 +17,6 @@ public class SparkDemo {
     // get ref to collection
     MongoCollection<Document> userCollection = db.getCollection("Users");
 
-    Document newNote = new Document("note", new Document(
-        "hello", List.of("a", "b")
-    ));
-    userCollection.insertOne(newNote);
     port(1235);
     // 2 way communication
     webSocket("/ws", WebSocketHandler.class); // open socket and leave it open
