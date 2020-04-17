@@ -14,6 +14,7 @@ const App = () => {
         <Link to="/logout">Log Out</Link>
         <Link to="/login"> Login</Link>
         <Link to="/signup"> Sign Up</Link>
+        <Link to="/userpage">User Page</Link>
       </nav>
       <Switch>
         <Route path="/login">
@@ -22,7 +23,7 @@ const App = () => {
         <Route path="/signup">
           <Signup />
         </Route>
-        <Route path="/">
+        <Route path="/userpage">
           <UserPage />
         </Route>
         <Route path="/">
