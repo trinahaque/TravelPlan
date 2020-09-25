@@ -9,6 +9,7 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import com.google.gson.Gson;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class SparkDemo {
     Gson gson = new Gson();
     port(1235);
     // 2 way communication
-    webSocket("/ws", WebSocketHandler.class); // open socket and leave it open
+//    webSocket("/ws", WebSocketHandler.class); // open socket and leave it open
     get("/hello", (req, res) -> "hi"); // test
     post("/api/authenticate", (req, res) -> {
       String bodyString = req.body();
