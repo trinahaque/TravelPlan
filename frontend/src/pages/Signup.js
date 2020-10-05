@@ -28,9 +28,9 @@ const Signup = ({appUser, setAppUser}) => {
         });
   };
 
-  if (appUser){
-    return <Redirect to="/userpage"/>;
-  }
+  // if (appUser){
+  //   return <Redirect to="/userpage"/>;
+  // }
 
   return (
     <div>
